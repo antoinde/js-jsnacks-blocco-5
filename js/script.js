@@ -29,3 +29,62 @@ console.log("JavaScript is working properly! =) Let's code!");
  * Dividi in due array separati le zucchine che misurano meno o più di 15cm.
  * Infine stampa separatamente quanto pesano i due gruppi di zucchine.
  */
+
+
+/* SNACK 1 -----------------------svolgimento---------------------------*/
+const arraySquadreCalcio = //nome:   punti_fatti:   falli_subiti:
+[
+    {
+        nome: 'Milan',
+        punti_fatti: '',
+        falli_subiti: ''
+    },
+    {
+        nome: 'Juventus',
+        punti_fatti: '',
+        falli_subiti: ''
+    },
+    {
+        nome: 'Roma',
+        punti_fatti: '',
+        falli_subiti: ''
+    },
+    {
+        nome: 'Napoli',
+        punti_fatti: '',
+        falli_subiti: ''
+    },
+    {
+        nome: 'Palermo',
+        punti_fatti: '',
+        falli_subiti: ''
+    },
+    {
+        nome: 'Torino',
+        punti_fatti: '',
+        falli_subiti: ''
+    },
+    {
+        nome: 'Parma',
+        punti_fatti: '',
+        falli_subiti: ''
+    },
+    {
+        nome: 'Inter',
+        punti_fatti: '',
+        falli_subiti: ''
+    },
+    
+    
+    
+];
+
+//genero punti random
+for(let i=0; i<arraySquadreCalcio.length; i++) {
+        const oggetto = arraySquadreCalcio[i];
+        //pusho dentro i numeri random
+        oggetto.punti_fatti=Math.floor(Math.random() * 10);
+        oggetto.falli_subiti=Math.floor(Math.random() * 10);
+}
+//stampa array
+console.log(arraySquadreCalcio);
