@@ -32,6 +32,15 @@ console.log("JavaScript is working properly! =) Let's code!");
 
 
 /* SNACK 1 -----------------------svolgimento---------------------------*/
+/* 
+
+ * Creare un array di oggetti di squadre di calcio. 
+ * Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+ * Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+ * Generare numeri random al posto degli 0 nelle proprietà:
+ * punti fatti e falli subiti
+
+*/
 const arraySquadreCalcio = //nome:   punti_fatti:   falli_subiti:
 [
     {
@@ -88,3 +97,33 @@ for(let i=0; i<arraySquadreCalcio.length; i++) {
 }
 //stampa array
 console.log(arraySquadreCalcio);
+
+
+/* SNACK 2 -----------------------svolgimento---------------------------*/
+/* 
+
+ * Si scriva una funzione che accetti tre argomenti, 
+ * un array e due numeri (a più piccolo di b). 
+ * La funzione ritornerà un nuovo array con i valori 
+ * che hanno la posizione compresa tra i due numeri.
+
+*/
+let array=[];
+start(array, 5, 15);
+//stampa array
+console.log(array);
+
+function start(array, a, b) {
+    for(let i=a; i<=b; i++) {
+        array.push(i);
+    }
+    return array;
+}
+/* SNACK 3 -----------------------svolgimento---------------------------*/
+/* 
+
+ * Crea 10 oggetti che rappresentano una zucchina.
+ * Dividi in due array separati le zucchine che misurano meno o più di 15cm.
+ * Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+
+*/
